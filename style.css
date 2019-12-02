@@ -1,3 +1,10 @@
 body {
   background-color: black;
 }
+.box {
+  background-color: #060ce9;
+  width: 160px;
+  height: 160px;
+  margin: 2px;
+  float: left;
+}
