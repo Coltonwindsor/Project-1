@@ -10,6 +10,14 @@ Instructions: Click on a square to be presented with a trivia question. Correct 
 
 https://trello.com/b/fWEAG18H/project-1-jeopardy
 
+## Github Repo
+
+https://github.com/Coltonwindsor/Project-1
+
+## Link to Game
+
+<Aplication>
+
 Wire frames:
 
 ![Homepage](https://i.imgur.com/orMltcl.jpg)
