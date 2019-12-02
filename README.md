@@ -12,5 +12,5 @@ https://trello.com/b/fWEAG18H/project-1-jeopardy
 
 Wire frames:
 
-![Homepage](/Project1/Project-1/images.MainPage.jpg)
-![AnswerBox](/Project1/Project-1/images.QuestionModal.jpg)
+![Homepage](/Project1/Project-1/images/MainPage.jpg)
+![AnswerBox](/Project1/Project-1/images/QuestionModal.jpg)
