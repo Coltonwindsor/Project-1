@@ -14,7 +14,7 @@ console.log('this is a test')
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
 
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
-
+let score = 0;
 // Questions problem - how to store information about each question (text of question, choices for answers, point value, correct answers)
 // Seperate these questions by category
 

@@ -16,7 +16,7 @@ https://github.com/Coltonwindsor/Project-1
 
 ## Link to Game
 
-[LinkToApp](Game)
+[Application](GameLinkHere)
 
 Wire frames:
 
