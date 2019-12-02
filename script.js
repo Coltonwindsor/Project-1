@@ -18,12 +18,20 @@ console.log('this is a test')
 // Questions problem - how to store information about each question (text of question, choices for answers, point value, correct answers)
 // Seperate these questions by category
 
+
 // Create a modal that displays when a user clicks a square that populates with information from that square's question. Change the background color of the modal to green if a user selects the correct answer (after submit). Change the background color to red if they select the incorrect answer (after submit). 
 
 // Create a function that adds the point value of the square clicked to the score if a user submits the correct answer.
 
 // Create a function that subtracts the point value of the square clicked from the score if the user submits an incorrect asnwer.
 
+// Create a function that makes each square disappear after the answer has been submitted.
+
 // Create a reset button that resets the board back to the setup at the beginning of the game when clicked by the user.
 
 // Create an element that displays the name the user input at the bottom of the game board. - Player Name: "input"
+
+// Create a function that displays an alert - or modal - to let the play know that they have won the game when they reach a certain number of points.
+
+// Create a function that displays an alert - or modal - to let the play know that they have lost the game when they have answered all the questions and don't have more than the winning total.
+
