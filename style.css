@@ -38,7 +38,7 @@ body {
   background-color: rgb(194, 204, 194);
 }
 .box {
-  background-color: #060ce9;
+  background-color: #040ab1;
   width: 16%;
   height: 170px;
   margin: 2px;
@@ -52,7 +52,10 @@ body {
 .question:hover {
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: #ffd700;
+}
+.question {
+  color: #ffd700;
 }
 main {
   width: 100%;

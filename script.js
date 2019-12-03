@@ -1,6 +1,3 @@
-// jeoprady blue hex - #060CE9
-console.log('this is a test')
-
 // Pseudocode
 
 // Create a heading - This... Is Jeoprady   or just use the Jeoprady logo
@@ -14,7 +11,7 @@ console.log('this is a test')
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
 
 function createBoard() {
-    let categories = ['Christmas', 'Sports', 'Movies', 'Geography', 'Cards', 'Alcohol']
+    let categories = ['Christmas', 'Movies', 'Sports', 'Geography', 'Cards', 'Alcohol']
 
     for (let i = 0; i < 36; i++) {
         let board = document.createElement('div')
@@ -67,15 +64,12 @@ function createBoard() {
                     // modal.heading.textContent = quesitons.[i].text
                 }
             }
-
-            // create for loop to go through questions array
-            // create if statement to check questions[i].category === evt.target.dataset.category && questions[i].pointValue === evt.target.dataset.points 
-            //then modal.heading.textContent = questions[i].text
-
         })
     }
 
-
+    // create for loop to go through questions array
+    // create if statement to check questions[i].category === evt.target.dataset.category && questions[i].pointValue === evt.target.dataset.points 
+    //then modal.heading.textContent = questions[i].text
 }
 function hideInstructions() {
     document.querySelector('.hideMe').classList.add('hidden')
@@ -83,7 +77,6 @@ function hideInstructions() {
 document.querySelector('button').addEventListener('click', function () {
     hideInstructions();
     createBoard();
-
 })
 
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
