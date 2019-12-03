@@ -54,7 +54,7 @@ function createBoard() {
             //create 36 divs - use if statement to add text and classes
         }
 
-        document.querySelector('main').appendChild(board).classList.add('box') //
+        document.querySelector('main').appendChild(board).classList.add('box')
 
         board.addEventListener('click', function () {
             for (let i = 0; i < questions.length; i++) {
