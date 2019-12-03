@@ -24,156 +24,187 @@ let score = 0;
 // create a variable called questions - set it equal to an array of objects - each object contains the information for each question.
 
 let questions = [
+    // category 1 - christmas
     {
-        text: "question1 text",
+        text: "The color Christmas Elvis is will have.",
         pointValue: 200,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is red?", "What is blue?", "What is green?", "What is white?"],
+        correct: "What is blue?"
     },
     {
-        text: "question2 text",
+        text: "This holiday drink is also known as milk punch",
         pointValue: 400,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is a White Russian?", "What is Mulled Wine", "What is eggnog?", "What is hot chocolate?"],
+        correct: "What is eggnog?"
     },
     {
-        text: "question3 text",
+        text: "The number of ghosts that appear in A Christmas Carol",
         pointValue: 600,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is 2?", "What is 3?", "What is 4?", "What is 5?"],
+        correct: "What is 4?"
     },
     {
-        text: "question4 text",
+        text: "The only present Ralphie asks for in A Christmas Story",
         pointValue: 800,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is a fire truck?", "What is a pet rock?", "What is a BB gun?", "What is an action figure?"],
+        correct: "What is a BB gun?"
     },
     {
-        text: "question5 text",
+        text: "The country that began the traditon of putting up a Christmas tree",
         pointValue: 1000,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Germany?", "What is the United States?", "What is Austria?", "What is Lebanon?"],
+        correct: "What is Germany?"
     },
-    {
-        text: "question6 text",
+    { // category 2 - sports
+        text: "The tool used to strike the ball in Tennis",
         pointValue: 200,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is a paddel?", "What is a racket?", "What is a club?", "What is the hand?"],
+        correct: "What is a racket"
     },
     {
-        text: "question7 text",
+        text: "The only NFL team that is publically owned",
         pointValue: 400,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["Who are the Tampa Bay Buccaneers?", "Who are the Dalas Cowboys?", "Who are The Green Bay Packers?", "Who are The Atlanta Falcons?"],
+        correct: "Who are the Green Bay Packers?"
     },
     {
-        text: "question8 text",
+        text: "The winningest coach in NFL history",
         pointValue: 600,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["Who is Dan Reeves?", "Who is Bill Belichick?", "Who is Tom Landry?", "Who is Don Shula?"],
+        correct: "Who is Don Shula?"
     },
     {
-        text: "question9 text",
+        text: "Famous golfer nicknamed The Golden Bear",
         pointValue: 800,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["Who is Jack Nicklaus?", "Who is Arnold Palmer?", "Who is Gary Player?", "Who is Tom Watson?"],
+        correct: "Who is Jack Nicklaus"
     },
     {
-        text: "question10 text",
+        text: "This NBA player went on to become mayor of Sacramento, California",
         pointValue: 1000,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["Who is Clyde Drexler?", "Who is Karl Malone?", "Who is Reggie Miller?", "Who is Kevin Johnson?"],
+        correct: "Who is Kevin Johnson?"
     },
-    {
-        text: "question11 text",
+    { // Category 3 - Movies 
+        text: "Disney's 3D animation company",
         pointValue: 200,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Dreamworks?", "What is Pixar?", "What is Blue Sky Studio?", "What is Imagination Engine?"],
+        correct: "What is Pixar?"
     },
     {
-        text: "question12 text",
+        text: "The title of the second Indiana Jones movie - Released in 1984",
         pointValue: 400,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Indiana Jones and the Temple of Doom?", "What is Indiana Jones and the Raiders of Lost Arc?", "What is Indiana Jones and the Fountain of Youth?", "What is Indiana Jones and the Next Crusade?"],
+        correct: "What is Indiana Jones and the Temple of Doom?"
     },
     {
-        text: "question13 text",
+        text: "This actress plays Katniss Everdeen in the Hunger Games movies",
         pointValue: 600,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["Who is Kate Winslet?", "Who is Jennifer Lawrence?", "Who is Scarlett Johansson?", "Who is Ellen Page?"],
+        correct: "Who is Scarlett Johansson?"
     },
     {
-        text: "question14 text",
+        text: "Directed the epic historical drama Schindler's List in 1993",
         pointValue: 800,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["Who is Martin Scorsese?", "Who is Steven Spielberg?", "Who is Francis Ford Coppola?", "Who is Stanley Kubrick?"],
+        correct: "Who is Steven Spielberg?"
     },
     {
-        text: "question15 text",
+        text: "This was first year the Oscars were presented",
         pointValue: 1000,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is 1951?", "What is 1929?", "What is 1967?", "What is 1936?"],
+        correct: "What is 1929?"
     },
-    {
-        text: "question16 text",
+    { // Category 4 - Geography 
+        text: "The smallest state in the United States",
         pointValue: 200,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Maryland?", "What is Delaware?", "What is Rhode Island?", "What is Vermont?"],
+        correct: "What is Rhode Island?"
     },
     {
-        text: "question17 text",
+        text: "The state in which the Mountain Mauna Kea is located",
         pointValue: 400,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Colorado?", "What is South Carolina?", "What is Alaska?", "What is Hawaii?"],
+        correct: "What is Hawaii?"
     },
     {
-        text: "question18 text",
+        text: "The name of the deepest lake in the United States",
         pointValue: 600,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Crater Lake?", "What is Lake Superior", "What is Lake Tahoe?", "What is Lake Pend Oreille?"],
+        correct: "What is Crater Lake?"
     },
     {
-        text: "question19 text",
+        text: "The state in which Mount Rushmore is located",
         pointValue: 800,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Utah?", "What is Montana?", "What is South Dakota?", "What is Colorado?"],
+        correct: "What is South Dakota?"
     },
     {
-        text: "question20 text",
+        text: "The number of US states that are landlocked",
         pointValue: 1000,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is 23?", "What is 29?", "What is 12?", "What is 16?"],
+        correct: "What is 16?"
     },
-    {
-        text: "question21 text",
+    { // category 5 - Playing Cards
+        text: "The name of the poker hand when a player has 5 cards of the same suit",
         pointValue: 200,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is 5 of a kind?", "What is a full house?", "What is a flush?", "What is 5 pair?"],
+        correct: "What is a flush?"
     },
     {
-        text: "question22 text",
+        text: "This is the name of a famous playing card production company",
         pointValue: 400,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Bicycle?", "What is Jokers Wild?", "What is Jameson Inc.?", "What is Ace?"],
+        correct: "What is Bicycle?"
     },
     {
-        text: "question23 text",
+        text: "The name for the initial bet placed by all players at the begining of a hand before any cards are dealt",
         pointValue: 600,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is the tax?", "What is the ante?", "What is the round?", "What is the blind?"],
+        correct: "What is the ante?"
     },
     {
-        text: "question24 text",
+        text: "A form of poker dealt with 2 cards down - 4 cards up - and then 1 card down",
         pointValue: 800,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["What is Razz?", "What is pass the Queen?", "What is Texas Holdem?", "What is Badugi?"],
+        correct: "What is Razz?"
     },
     {
-        text: "question25 text",
+        text: "Famous poker player that made a miraculous 1 chip comeback to win the World Series of Poker inspiring the phrase - A chip and a chair",
         pointValue: 1000,
-        options: ["option1", "option2", "option3", "option4"],
-        correct: "option2"
+        options: ["Who is Stu Ungar?", "Who is Amarillo Slim?", "Who is Doyle Brunson?", "Who is Jack Straus?"],
+        correct: "Who is Jack Straus?"
     },
+    { // Category 6 - Alcohol
+        text: "The main ingredient used to flavor beers",
+        pointValue: 200,
+        options: ["What are hops?", "What is salt?", "What are bitters?", "What is vinegar?"],
+        correct: "What are hops?"
+    },
+    {
+        text: "Tequila is created mainly using this",
+        pointValue: 400,
+        options: ["What is pineapple?", "What is guava?", "What is agave", "What are berries"],
+        correct: "What is agave?"
+    },
+    {
+        text: "All bourbon is this but not all of this is bourbon",
+        pointValue: 600,
+        options: ["What is rum?", "What is whiskey?", "What is scotch?", "What is brandy?"],
+        correct: "What is whiskey?"
+    },
+    {
+        text: "The earliest evidence of alcohol production dates back to this age",
+        pointValue: 800,
+        options: ["What is the bronze age?", "What is the iron age?", "What is the copper age?", "What is the stone age?"],
+        correct: "What is the stone age?"
+    },
+    {
+        text: "The year that beer was first sold in cans",
+        pointValue: 1000,
+        options: ["What is 1935?", "What is 1940?", "What is 1945?", "What is 1950?"],
+        correct: "What is 1935?"
+    }
 ]
 
 // Create a modal that displays when a user clicks a square that populates with information from that square's question. Change the background color of the modal to green if a user selects the correct answer (after submit). Change the background color to red if they select the incorrect answer (after submit). 
