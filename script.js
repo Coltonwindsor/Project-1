@@ -16,18 +16,18 @@ let categories = ['Christmas', 'Sports', 'Movies', 'Geography', 'Playing Cards',
 
 for (let i = 0; i < 36; i++) {
     let board = document.createElement('div')
-    if (i <= 6 && i >= 0) {
+    if (i <= 5 && i >= 0) {
         board.textContent = categories[i]
         board.classList.add('category')
-    } else if (i >= 7 && i <= 12) {
+    } else if (i > 5 && i <= 11) {
         board.textContent = '200';
-    } else if (i > 12 && i <= 18) {
+    } else if (i > 11 && i <= 17) {
         board.textContent = '400'
-    } else if (i > 18 && i <= 24) {
+    } else if (i > 17 && i <= 23) {
         board.textContent = '600'
-    } else if (i > 24 && i <= 30) {
+    } else if (i > 23 && i <= 29) {
         board.textContent = '800'
-    } else if (i > 30 && i <= 36) {
+    } else if (i > 29 && i <= 35) {
         board.textContent = '1000'
     }
     document.body.appendChild(board).classList.add('box') //create 36 divs - use if statement to add text and classes
