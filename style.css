@@ -3,9 +3,11 @@ main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .hideMe {
   text-align: center;
+  font-family: "Solway", serif;
 }
 .hidden {
   display: none;
@@ -13,7 +15,25 @@ main {
 button {
   font-size: 50px;
   margin-bottom: 20px;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
 }
+button:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+
 body {
   background-color: rgb(194, 204, 194);
 }
@@ -26,7 +46,8 @@ body {
   color: whitesmoke;
   font-size: 20px;
   line-height: 170px;
-  border-radius: 10px;
+  border-radius: 20px;
+  font-family: "Solway", serif;
 }
 .question:hover {
   border-style: solid;
@@ -37,14 +58,14 @@ main {
   width: 100%;
 }
 footer {
-  width: 100%;
-  color: black;
+  display: flex;
+  justify-content: center;
 }
 header {
   display: flex;
   justify-content: center;
+  padding-bottom: 25px;
 }
-
 img {
   width: 80%;
 }

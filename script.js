@@ -24,18 +24,37 @@ function createBoard() {
         } else if (i > 5 && i <= 11) {
             board.textContent = '200';
             board.classList.add('question')
+            board.setAttribute('data-points', '200')
         } else if (i > 11 && i <= 17) {
             board.textContent = '400'
             board.classList.add('question')
+            board.setAttribute('data-points', '400')
         } else if (i > 17 && i <= 23) {
             board.textContent = '600'
             board.classList.add('question')
+            board.setAttribute('data-points', '600')
         } else if (i > 23 && i <= 29) {
             board.textContent = '800'
             board.classList.add('question')
+            board.setAttribute('data-points', '800')
         } else if (i > 29 && i <= 35) {
             board.textContent = '1000'
             board.classList.add('question')
+            board.setAttribute('data-points', '1000')
+        }
+        if (i === 6 || i === 12 || i === 18 || i === 24 || i === 30) {
+            board.setAttribute('data-category', 'christmas')
+        } else if (i === 7 || i === 13 || i === 19 || i === 25 || i === 31) {
+            board.setAttribute('data-category', 'movies')
+        } else if (i === 8 || i === 14 || i === 20 || i === 26 || i === 32) {
+            board.setAttribute('data-category', 'sports')
+        } else if (i === 9 || i === 15 || i === 21 || i === 27 || i === 33) {
+            board.setAttribute('data-category', 'geography')
+        } else if (i === 10 || i === 16 || i === 22 || i === 28 || i === 34) {
+            board.setAttribute('data-category', 'cards')
+        } else if (i === 11 || i === 17 || i === 23 || i === 29 || i === 35) {
+            board.setAttribute('data-category', 'alcohol')
+            //create 36 divs - use if statement to add text and classes
         }
         document.querySelector('main').appendChild(board).classList.add('box') //create 36 divs - use if statement to add text and classes
     }
@@ -43,7 +62,6 @@ function createBoard() {
 function hideInstructions() {
     document.querySelector('.hideMe').classList.add('hidden')
 }
-
 document.querySelector('button').addEventListener('click', function () {
     createBoard();
     hideInstructions();
@@ -61,7 +79,8 @@ let questions = [
         text: "The color Christmas Elvis is will have without you.",
         pointValue: 200,
         options: ["What is red?", "What is blue?", "What is green?", "What is white?"],
-        correct: "What is blue?"
+        correct: "What is blue?",
+        category: 'christmas'
     },
     {
         text: "This holiday drink is also known as milk punch",
