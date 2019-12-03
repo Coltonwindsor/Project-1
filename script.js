@@ -12,9 +12,24 @@ console.log('this is a test')
 // Bonus - create an input field for the user to type in their name to displayed under the game board.
 
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
+let categories = ['Christmas', 'Sports', 'Movies', 'Geography', 'Playing Cards', 'Alcohol']
 
 for (let i = 0; i < 36; i++) {
     let board = document.createElement('div')
+    if (i <= 6 && i >= 0) {
+        board.textContent = categories[i]
+        board.classList.add('category')
+    } else if (i >= 7 && i <= 12) {
+        board.textContent = '200';
+    } else if (i > 12 && i <= 18) {
+        board.textContent = '400'
+    } else if (i > 18 && i <= 24) {
+        board.textContent = '600'
+    } else if (i > 24 && i <= 30) {
+        board.textContent = '800'
+    } else if (i > 30 && i <= 36) {
+        board.textContent = '1000'
+    }
     document.body.appendChild(board).classList.add('box') //create 36 divs - use if statement to add text and classes
 }
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 

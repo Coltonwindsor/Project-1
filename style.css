@@ -1,10 +1,14 @@
 body {
   background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .box {
   background-color: #060ce9;
-  width: 160px;
-  height: 160px;
+  width: 16%;
+  height: 170px;
   margin: 2px;
-  float: left;
+  text-align: center;
+  color: whitesmoke;
 }
