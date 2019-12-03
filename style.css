@@ -1,11 +1,18 @@
 main {
-  background-color: black;
+  background-color: rgb(194, 204, 194);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+.hideMe {
+  text-align: center;
+}
+button {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
 body {
-  background-color: black;
+  background-color: rgb(194, 204, 194);
 }
 .box {
   background-color: #060ce9;
@@ -21,14 +28,14 @@ body {
 .question:hover {
   border-style: solid;
   border-width: 2px;
-  border-color: white;
+  border-color: black;
 }
 main {
   width: 100%;
 }
 footer {
   width: 100%;
-  color: whitesmoke;
+  color: black;
 }
 header {
   display: flex;
