@@ -21,16 +21,21 @@ for (let i = 0; i < 36; i++) {
         board.classList.add('category')
     } else if (i > 5 && i <= 11) {
         board.textContent = '200';
+        board.classList.add('question')
     } else if (i > 11 && i <= 17) {
         board.textContent = '400'
+        board.classList.add('question')
     } else if (i > 17 && i <= 23) {
         board.textContent = '600'
+        board.classList.add('question')
     } else if (i > 23 && i <= 29) {
         board.textContent = '800'
+        board.classList.add('question')
     } else if (i > 29 && i <= 35) {
         board.textContent = '1000'
+        board.classList.add('question')
     }
-    document.body.appendChild(board).classList.add('box') //create 36 divs - use if statement to add text and classes
+    document.querySelector('main').appendChild(board).classList.add('box') //create 36 divs - use if statement to add text and classes
 }
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
 let score = 0;
