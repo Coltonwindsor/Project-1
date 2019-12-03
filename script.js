@@ -12,31 +12,43 @@ console.log('this is a test')
 // Bonus - create an input field for the user to type in their name to displayed under the game board.
 
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
-let categories = ['Christmas', 'Sports', 'Movies', 'Geography', 'Playing Cards', 'Alcohol']
 
-for (let i = 0; i < 36; i++) {
-    let board = document.createElement('div')
-    if (i <= 5 && i >= 0) {
-        board.textContent = categories[i]
-        board.classList.add('category')
-    } else if (i > 5 && i <= 11) {
-        board.textContent = '200';
-        board.classList.add('question')
-    } else if (i > 11 && i <= 17) {
-        board.textContent = '400'
-        board.classList.add('question')
-    } else if (i > 17 && i <= 23) {
-        board.textContent = '600'
-        board.classList.add('question')
-    } else if (i > 23 && i <= 29) {
-        board.textContent = '800'
-        board.classList.add('question')
-    } else if (i > 29 && i <= 35) {
-        board.textContent = '1000'
-        board.classList.add('question')
+function createBoard() {
+    let categories = ['Christmas', 'Sports', 'Movies', 'Geography', 'Playing Cards', 'Alcohol']
+
+    for (let i = 0; i < 36; i++) {
+        let board = document.createElement('div')
+        if (i <= 5 && i >= 0) {
+            board.textContent = categories[i]
+            board.classList.add('category')
+        } else if (i > 5 && i <= 11) {
+            board.textContent = '200';
+            board.classList.add('question')
+        } else if (i > 11 && i <= 17) {
+            board.textContent = '400'
+            board.classList.add('question')
+        } else if (i > 17 && i <= 23) {
+            board.textContent = '600'
+            board.classList.add('question')
+        } else if (i > 23 && i <= 29) {
+            board.textContent = '800'
+            board.classList.add('question')
+        } else if (i > 29 && i <= 35) {
+            board.textContent = '1000'
+            board.classList.add('question')
+        }
+        document.querySelector('main').appendChild(board).classList.add('box') //create 36 divs - use if statement to add text and classes
     }
-    document.querySelector('main').appendChild(board).classList.add('box') //create 36 divs - use if statement to add text and classes
 }
+function hideInstructions() {
+    document.querySelector('.hideMe').classList.add('hidden')
+}
+
+document.querySelector('button').addEventListener('click', function () {
+    createBoard();
+    hideInstructions();
+})
+
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
 let score = 0;
 // Questions problem - how to store information about each question (text of question, choices for answers, point value, correct answers)
@@ -46,7 +58,7 @@ let score = 0;
 let questions = [
     // category 1 - christmas
     {
-        text: "The color Christmas Elvis is will have.",
+        text: "The color Christmas Elvis is will have without you.",
         pointValue: 200,
         options: ["What is red?", "What is blue?", "What is green?", "What is white?"],
         correct: "What is blue?"
