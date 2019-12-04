@@ -72,20 +72,25 @@ function createBoard() {
     //then modal.heading.textContent = questions[i].text
 }
 
+
+
 function hideInstructions() {
     document.querySelector('.hideMe').classList.add('hidden')
 }
-document.querySelector('button').addEventListener('click', function () {
+
+document.querySelector('.beginButton').addEventListener('click', function () {
     hideInstructions();
     createBoard();
     showFooter();
 })
+
 document.querySelector('.hideMeToo').classList.add('hidden')
 function showFooter() {
     document.querySelector('.hideMeToo').classList.remove('hidden')
 }
+
 document.querySelector('.resetButton').addEventListener('click', function () {
-    // createBoard(); function to refresh page here
+    location.reload();
 })
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
 let score = 0;
