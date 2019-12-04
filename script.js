@@ -10,7 +10,6 @@
 
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
 let questions = [
-    // category 1 - christmas
     {
         text: "The color Christmas Elvis is will have without you.",
         pointValue: '200',
@@ -46,7 +45,7 @@ let questions = [
         correct: "What is Germany?",
         category: 'Christmas'
     },
-    { // category 2 - sports
+    {
         text: "The tool used to strike the ball in Tennis",
         pointValue: '200',
         options: ["What is a paddel?", "What is a racket?", "What is a club?", "What is the hand?"],
@@ -81,7 +80,7 @@ let questions = [
         correct: "Who is Kevin Johnson?",
         category: 'Sports'
     },
-    { // Category 3 - Movies 
+    {
         text: "Disney's 3D animation company",
         pointValue: '200',
         options: ["What is Dreamworks?", "What is Pixar?", "What is Blue Sky Studio?", "What is Imagination Engine?"],
@@ -116,7 +115,7 @@ let questions = [
         correct: "What is 1929?",
         category: 'Movies'
     },
-    { // Category 4 - Geography 
+    {
         text: "The smallest state in the United States",
         pointValue: '200',
         options: ["What is Maryland?", "What is Delaware?", "What is Rhode Island?", "What is Vermont?"],
@@ -151,7 +150,7 @@ let questions = [
         correct: "What is 16?",
         category: 'Geography'
     },
-    { // category 5 - Playing Cards
+    {
         text: "The name of the poker hand when a player has 5 cards of the same suit",
         pointValue: '200',
         options: ["What is 5 of a kind?", "What is a full house?", "What is a flush?", "What is 5 pair?"],
@@ -186,7 +185,7 @@ let questions = [
         correct: "Who is Jack Straus?",
         category: 'Cards'
     },
-    { // Category 6 - Alcohol
+    {
         text: "The main ingredient used to flavor beers",
         pointValue: '200',
         options: ["What are hops?", "What is salt?", "What are bitters?", "What is vinegar?"],
