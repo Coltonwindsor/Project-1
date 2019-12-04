@@ -16,210 +16,210 @@ let questions = [
         pointValue: '200',
         options: ["What is red?", "What is blue?", "What is green?", "What is white?"],
         correct: "What is blue?",
-        category: 'christmas'
+        category: 'Christmas'
     },
     {
         text: "This holiday drink is also known as milk punch",
         pointValue: '400',
         options: ["What is a White Russian?", "What is Mulled Wine", "What is eggnog?", "What is hot chocolate?"],
         correct: "What is eggnog?",
-        category: 'christmas'
+        category: 'Christmas'
     },
     {
         text: "The number of ghosts that appear in A Christmas Carol",
         pointValue: '600',
         options: ["What is 2?", "What is 3?", "What is 4?", "What is 5?"],
         correct: "What is 4?",
-        category: 'christmas'
+        category: 'Christmas'
     },
     {
         text: "The only present Ralphie asks for in A Christmas Story",
         pointValue: '800',
         options: ["What is a fire truck?", "What is a pet rock?", "What is a BB gun?", "What is an action figure?"],
         correct: "What is a BB gun?",
-        category: 'christmas'
+        category: 'Christmas'
     },
     {
         text: "The country that began the traditon of putting up a Christmas tree",
         pointValue: '1000',
         options: ["What is Germany?", "What is the United States?", "What is Austria?", "What is Lebanon?"],
         correct: "What is Germany?",
-        category: 'christmas'
+        category: 'Christmas'
     },
     { // category 2 - sports
         text: "The tool used to strike the ball in Tennis",
         pointValue: '200',
         options: ["What is a paddel?", "What is a racket?", "What is a club?", "What is the hand?"],
         correct: "What is a racket",
-        category: 'sports'
+        category: 'Sports'
     },
     {
         text: "The only NFL team that is publically owned",
         pointValue: '400',
         options: ["Who are the Tampa Bay Buccaneers?", "Who are the Dalas Cowboys?", "Who are The Green Bay Packers?", "Who are The Atlanta Falcons?"],
         correct: "Who are the Green Bay Packers?",
-        category: 'sports'
+        category: 'Sports'
     },
     {
         text: "The winningest coach in NFL history",
         pointValue: '600',
         options: ["Who is Dan Reeves?", "Who is Bill Belichick?", "Who is Tom Landry?", "Who is Don Shula?"],
         correct: "Who is Don Shula?",
-        category: 'sports'
+        category: 'Sports'
     },
     {
         text: "Famous golfer nicknamed The Golden Bear",
         pointValue: '800',
         options: ["Who is Jack Nicklaus?", "Who is Arnold Palmer?", "Who is Gary Player?", "Who is Tom Watson?"],
         correct: "Who is Jack Nicklaus",
-        category: 'sports'
+        category: 'Sports'
     },
     {
         text: "This NBA player went on to become mayor of Sacramento, California",
         pointValue: '1000',
         options: ["Who is Clyde Drexler?", "Who is Karl Malone?", "Who is Reggie Miller?", "Who is Kevin Johnson?"],
         correct: "Who is Kevin Johnson?",
-        category: 'sports'
+        category: 'Sports'
     },
     { // Category 3 - Movies 
         text: "Disney's 3D animation company",
         pointValue: '200',
         options: ["What is Dreamworks?", "What is Pixar?", "What is Blue Sky Studio?", "What is Imagination Engine?"],
         correct: "What is Pixar?",
-        category: 'movies'
+        category: 'Movies'
     },
     {
         text: "The title of the second Indiana Jones movie - Released in 1984",
         pointValue: '400',
         options: ["What is Indiana Jones and the Temple of Doom?", "What is Indiana Jones and the Raiders of Lost Arc?", "What is Indiana Jones and the Fountain of Youth?", "What is Indiana Jones and the Next Crusade?"],
         correct: "What is Indiana Jones and the Temple of Doom?",
-        category: 'movies'
+        category: 'Movies'
     },
     {
         text: "This actress plays Katniss Everdeen in the Hunger Games movies",
         pointValue: '600',
         options: ["Who is Kate Winslet?", "Who is Jennifer Lawrence?", "Who is Scarlett Johansson?", "Who is Ellen Page?"],
         correct: "Who is Scarlett Johansson?",
-        category: 'movies'
+        category: 'Movies'
     },
     {
         text: "Directed the epic historical drama Schindler's List in 1993",
         pointValue: '800',
         options: ["Who is Martin Scorsese?", "Who is Steven Spielberg?", "Who is Francis Ford Coppola?", "Who is Stanley Kubrick?"],
         correct: "Who is Steven Spielberg?",
-        category: 'movies'
+        category: 'Movies'
     },
     {
         text: "This was first year the Oscars were presented",
         pointValue: '1000',
         options: ["What is 1951?", "What is 1929?", "What is 1967?", "What is 1936?"],
         correct: "What is 1929?",
-        category: 'movies'
+        category: 'Movies'
     },
     { // Category 4 - Geography 
         text: "The smallest state in the United States",
         pointValue: '200',
         options: ["What is Maryland?", "What is Delaware?", "What is Rhode Island?", "What is Vermont?"],
         correct: "What is Rhode Island?",
-        category: 'geography'
+        category: 'Geography'
     },
     {
         text: "The state in which the Mountain Mauna Kea is located",
         pointValue: '400',
         options: ["What is Colorado?", "What is South Carolina?", "What is Alaska?", "What is Hawaii?"],
         correct: "What is Hawaii?",
-        category: 'geography'
+        category: 'Geography'
     },
     {
         text: "The name of the deepest lake in the United States",
         pointValue: '600',
         options: ["What is Crater Lake?", "What is Lake Superior", "What is Lake Tahoe?", "What is Lake Pend Oreille?"],
         correct: "What is Crater Lake?",
-        category: 'geography'
+        category: 'Geography'
     },
     {
         text: "The state in which Mount Rushmore is located",
         pointValue: '800',
         options: ["What is Utah?", "What is Montana?", "What is South Dakota?", "What is Colorado?"],
         correct: "What is South Dakota?",
-        category: 'geography'
+        category: 'Geography'
     },
     {
         text: "The number of US states that are landlocked",
         pointValue: '1000',
         options: ["What is 23?", "What is 29?", "What is 12?", "What is 16?"],
         correct: "What is 16?",
-        category: 'geography'
+        category: 'Geography'
     },
     { // category 5 - Playing Cards
         text: "The name of the poker hand when a player has 5 cards of the same suit",
         pointValue: '200',
         options: ["What is 5 of a kind?", "What is a full house?", "What is a flush?", "What is 5 pair?"],
         correct: "What is a flush?",
-        category: 'cards'
+        category: 'Cards'
     },
     {
         text: "This is the name of a famous playing card production company",
         pointValue: '400',
         options: ["What is Bicycle?", "What is Jokers Wild?", "What is Jameson Inc.?", "What is Ace?"],
         correct: "What is Bicycle?",
-        category: 'cards'
+        category: 'Cards'
     },
     {
         text: "The name for the initial bet placed by all players at the begining of a hand before any cards are dealt",
         pointValue: '600',
         options: ["What is the tax?", "What is the ante?", "What is the round?", "What is the blind?"],
         correct: "What is the ante?",
-        category: 'cards'
+        category: 'Cards'
     },
     {
         text: "A form of poker dealt with 2 cards down - 4 cards up - and then 1 card down",
         pointValue: '800',
         options: ["What is Razz?", "What is pass the Queen?", "What is Texas Holdem?", "What is Badugi?"],
         correct: "What is Razz?",
-        category: 'cards'
+        category: 'Cards'
     },
     {
         text: "Famous poker player that made a miraculous 1 chip comeback to win the World Series of Poker inspiring the phrase - A chip and a chair",
         pointValue: '1000',
         options: ["Who is Stu Ungar?", "Who is Amarillo Slim?", "Who is Doyle Brunson?", "Who is Jack Straus?"],
         correct: "Who is Jack Straus?",
-        category: 'cards'
+        category: 'Cards'
     },
     { // Category 6 - Alcohol
         text: "The main ingredient used to flavor beers",
         pointValue: '200',
         options: ["What are hops?", "What is salt?", "What are bitters?", "What is vinegar?"],
         correct: "What are hops?",
-        category: 'alcohol'
+        category: 'Alcohol'
     },
     {
         text: "Tequila is created mainly using this",
         pointValue: '400',
-        options: ["What is pineapple?", "What is guava?", "What is agave", "What are berries"],
+        options: ["What is pineapple?", "What is guava?", "What is agave?", "What are berries?"],
         correct: "What is agave?",
-        category: 'alcohol'
+        category: 'Alcohol'
     },
     {
         text: "All bourbon is this but not all of this is bourbon",
         pointValue: '600',
         options: ["What is rum?", "What is whiskey?", "What is scotch?", "What is brandy?"],
         correct: "What is whiskey?",
-        category: 'alcohol'
+        category: 'Alcohol'
     },
     {
         text: "The earliest evidence of alcohol production dates back to this age",
         pointValue: '800',
         options: ["What is the bronze age?", "What is the iron age?", "What is the copper age?", "What is the stone age?"],
         correct: "What is the stone age?",
-        category: 'alcohol'
+        category: 'Alcohol'
     },
     {
         text: "The year that beer was first sold in cans",
         pointValue: '1000',
         options: ["What is 1935?", "What is 1940?", "What is 1945?", "What is 1950?"],
         correct: "What is 1935?",
-        category: 'alcohol'
+        category: 'Alcohol'
     }
 ]
 
@@ -263,18 +263,17 @@ function createBoard() {
             board.setAttribute('data-toggle', 'modal')
         }
         if (i === 6 || i === 12 || i === 18 || i === 24 || i === 30) {
-            board.setAttribute('data-category', 'christmas')
+            board.setAttribute('data-category', 'Christmas')
         } else if (i === 7 || i === 13 || i === 19 || i === 25 || i === 31) {
-            board.setAttribute('data-category', 'movies')
+            board.setAttribute('data-category', 'Movies')
         } else if (i === 8 || i === 14 || i === 20 || i === 26 || i === 32) {
-            board.setAttribute('data-category', 'sports')
+            board.setAttribute('data-category', 'Sports')
         } else if (i === 9 || i === 15 || i === 21 || i === 27 || i === 33) {
-            board.setAttribute('data-category', 'geography')
+            board.setAttribute('data-category', 'Geography')
         } else if (i === 10 || i === 16 || i === 22 || i === 28 || i === 34) {
-            board.setAttribute('data-category', 'cards')
+            board.setAttribute('data-category', 'Cards')
         } else if (i === 11 || i === 17 || i === 23 || i === 29 || i === 35) {
-            board.setAttribute('data-category', 'alcohol')
-            //create 36 divs - use if statement to add text and classes
+            board.setAttribute('data-category', 'Alcohol')
         }
 
         document.querySelector('main').appendChild(board).classList.add('box')
@@ -295,17 +294,10 @@ function createBoard() {
                     answer2.textContent = questions[i].options[1]
                     answer3.textContent = questions[i].options[2]
                     answer4.textContent = questions[i].options[3]
-
-                    // This is where you inject values from questions[i].text or options or whatever into the modal
-                    // modal.heading.textContent = quesitons.[i].text
                 }
             }
         })
     }
-
-    // create for loop to go through questions array
-    // create if statement to check questions[i].category === evt.target.dataset.category && questions[i].pointValue === evt.target.dataset.points 
-    //then modal.heading.textContent = questions[i].text
 }
 
 
