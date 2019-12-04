@@ -9,103 +9,6 @@
 // Bonus - create an input field for the user to type in their name to displayed under the game board.
 
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
-
-function createBoard() {
-    let categories = ['Christmas', 'Movies', 'Sports', 'Geography', 'Cards', 'Alcohol']
-
-    for (let i = 0; i < 36; i++) {
-        let board = document.createElement('div')
-        if (i <= 5 && i >= 0) {
-            board.textContent = categories[i]
-            board.classList.add('category')
-        } else if (i > 5 && i <= 11) {
-            board.textContent = '200';
-            board.classList.add('question')
-            board.setAttribute('data-points', '200')
-        } else if (i > 11 && i <= 17) {
-            board.textContent = '400'
-            board.classList.add('question')
-            board.setAttribute('data-points', '400')
-        } else if (i > 17 && i <= 23) {
-            board.textContent = '600'
-            board.classList.add('question')
-            board.setAttribute('data-points', '600')
-        } else if (i > 23 && i <= 29) {
-            board.textContent = '800'
-            board.classList.add('question')
-            board.setAttribute('data-points', '800')
-        } else if (i > 29 && i <= 35) {
-            board.textContent = '1000'
-            board.classList.add('question')
-            board.setAttribute('data-points', '1000')
-        }
-        if (i === 6 || i === 12 || i === 18 || i === 24 || i === 30) {
-            board.setAttribute('data-category', 'christmas')
-        } else if (i === 7 || i === 13 || i === 19 || i === 25 || i === 31) {
-            board.setAttribute('data-category', 'movies')
-        } else if (i === 8 || i === 14 || i === 20 || i === 26 || i === 32) {
-            board.setAttribute('data-category', 'sports')
-        } else if (i === 9 || i === 15 || i === 21 || i === 27 || i === 33) {
-            board.setAttribute('data-category', 'geography')
-        } else if (i === 10 || i === 16 || i === 22 || i === 28 || i === 34) {
-            board.setAttribute('data-category', 'cards')
-        } else if (i === 11 || i === 17 || i === 23 || i === 29 || i === 35) {
-            board.setAttribute('data-category', 'alcohol')
-            //create 36 divs - use if statement to add text and classes
-        }
-
-        document.querySelector('main').appendChild(board).classList.add('box')
-
-        board.addEventListener('click', function () {
-            for (let i = 0; i < questions.length; i++) {
-                if (questions[i].category === this.dataset.category && questions[i].pointValue === this.dataset.points) {
-                    console.log(this.dataset)
-                    // This is where you inject values from questions[i].text or options or whatever into the modal
-                    // modal.heading.textContent = quesitons.[i].text
-                }
-            }
-        })
-    }
-
-    // create for loop to go through questions array
-    // create if statement to check questions[i].category === evt.target.dataset.category && questions[i].pointValue === evt.target.dataset.points 
-    //then modal.heading.textContent = questions[i].text
-}
-
-$('#exampleModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) // Button that triggered the modal
-    var recipient = button.data('whatever') // Extract info from data-* attributes
-    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-    var modal = $(this)
-    modal.find('.modal-title').text('New message to ' + recipient)
-    modal.find('.modal-body input').val(recipient)
-})
-
-function hideInstructions() {
-    document.querySelector('.hideMe').classList.add('hidden')
-}
-
-document.querySelector('.beginButton').addEventListener('click', function () {
-    hideInstructions();
-    createBoard();
-    showFooter();
-})
-
-document.querySelector('.hideMeToo').classList.add('hidden')
-function showFooter() {
-    document.querySelector('.hideMeToo').classList.remove('hidden')
-}
-
-document.querySelector('.resetButton').addEventListener('click', function () {
-    location.reload();
-})
-// Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
-let score = 0;
-// Questions problem - how to store information about each question (text of question, choices for answers, point value, correct answers)
-// Seperate these questions by category
-// create a variable called questions - set it equal to an array of objects - each object contains the information for each question.
-
 let questions = [
     // category 1 - christmas
     {
@@ -319,6 +222,119 @@ let questions = [
         category: 'alcohol'
     }
 ]
+
+function createBoard() {
+    let categories = ['Christmas', 'Movies', 'Sports', 'Geography', 'Cards', 'Alcohol']
+
+    for (let i = 0; i < 36; i++) {
+        let board = document.createElement('div')
+        if (i <= 5 && i >= 0) {
+            board.textContent = categories[i]
+            board.classList.add('category')
+        } else if (i > 5 && i <= 11) {
+            board.textContent = '200';
+            board.classList.add('question')
+            board.setAttribute('data-points', '200')
+            board.setAttribute('data-target', '#exampleModal')
+            board.setAttribute('data-toggle', 'modal')
+        } else if (i > 11 && i <= 17) {
+            board.textContent = '400'
+            board.classList.add('question')
+            board.setAttribute('data-points', '400')
+            board.setAttribute('data-target', '#exampleModal')
+            board.setAttribute('data-toggle', 'modal')
+        } else if (i > 17 && i <= 23) {
+            board.textContent = '600'
+            board.classList.add('question')
+            board.setAttribute('data-points', '600')
+            board.setAttribute('data-target', '#exampleModal')
+            board.setAttribute('data-toggle', 'modal')
+        } else if (i > 23 && i <= 29) {
+            board.textContent = '800'
+            board.classList.add('question')
+            board.setAttribute('data-points', '800')
+            board.setAttribute('data-target', '#exampleModal')
+            board.setAttribute('data-toggle', 'modal')
+        } else if (i > 29 && i <= 35) {
+            board.textContent = '1000'
+            board.classList.add('question')
+            board.setAttribute('data-points', '1000')
+            board.setAttribute('data-target', '#exampleModal')
+            board.setAttribute('data-toggle', 'modal')
+        }
+        if (i === 6 || i === 12 || i === 18 || i === 24 || i === 30) {
+            board.setAttribute('data-category', 'christmas')
+        } else if (i === 7 || i === 13 || i === 19 || i === 25 || i === 31) {
+            board.setAttribute('data-category', 'movies')
+        } else if (i === 8 || i === 14 || i === 20 || i === 26 || i === 32) {
+            board.setAttribute('data-category', 'sports')
+        } else if (i === 9 || i === 15 || i === 21 || i === 27 || i === 33) {
+            board.setAttribute('data-category', 'geography')
+        } else if (i === 10 || i === 16 || i === 22 || i === 28 || i === 34) {
+            board.setAttribute('data-category', 'cards')
+        } else if (i === 11 || i === 17 || i === 23 || i === 29 || i === 35) {
+            board.setAttribute('data-category', 'alcohol')
+            //create 36 divs - use if statement to add text and classes
+        }
+
+        document.querySelector('main').appendChild(board).classList.add('box')
+
+        board.addEventListener('click', function () {
+            for (let i = 0; i < questions.length; i++) {
+                if (questions[i].category === this.dataset.category && questions[i].pointValue === this.dataset.points) {
+                    let catPointPair = document.querySelector('.modal-title')
+                    let questionText = document.querySelector('.modal-question')
+                    let answer1 = document.querySelector("[data-answer='1']")
+                    let answer2 = document.querySelector("[data-answer='2']")
+                    let answer3 = document.querySelector("[data-answer='3']")
+                    let answer4 = document.querySelector("[data-answer='4']")
+
+                    questionText.textContent = questions[i].text;
+                    catPointPair.textContent = `${questions[i].category} - ${questions[i].pointValue}`
+                    answer1.textContent = questions[i].options[0]
+                    answer2.textContent = questions[i].options[1]
+                    answer3.textContent = questions[i].options[2]
+                    answer4.textContent = questions[i].options[3]
+
+                    // This is where you inject values from questions[i].text or options or whatever into the modal
+                    // modal.heading.textContent = quesitons.[i].text
+                }
+            }
+        })
+    }
+
+    // create for loop to go through questions array
+    // create if statement to check questions[i].category === evt.target.dataset.category && questions[i].pointValue === evt.target.dataset.points 
+    //then modal.heading.textContent = questions[i].text
+}
+
+
+function hideInstructions() {
+    document.querySelector('.hideMe').classList.add('hidden')
+}
+
+document.querySelector('.beginButton').addEventListener('click', function () {
+    hideInstructions();
+    createBoard();
+    showFooter();
+})
+
+document.querySelector('.hideMeToo').classList.add('hidden')
+function showFooter() {
+    document.querySelector('.hideMeToo').classList.remove('hidden')
+}
+
+document.querySelector('.resetButton').addEventListener('click', function () {
+    location.reload();
+})
+
+
+// Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
+let score = 0;
+// Questions problem - how to store information about each question (text of question, choices for answers, point value, correct answers)
+// Seperate these questions by category
+// create a variable called questions - set it equal to an array of objects - each object contains the information for each question.
+
 
 // Create a modal that displays when a user clicks a square that populates with information from that square's question. Change the background color of the modal to green if a user selects the correct answer (after submit). Change the background color to red if they select the incorrect answer (after submit). 
 
