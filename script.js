@@ -319,6 +319,12 @@ document.querySelector('.resetButton').addEventListener('click', function () {
     location.reload();
 })
 
+document.querySelector('.btn-primary').addEventListener('click', function () {
+
+
+
+
+})
 
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
 let score = 0;
