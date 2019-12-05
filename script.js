@@ -343,7 +343,12 @@ document.querySelector('.btn-primary').addEventListener('click', function (evt) 
             }
         }
     }
+    if (count >= 5000) {
+        alert('You Win!')
+        return null
+    }
 })
+
 
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions.
 
