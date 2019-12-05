@@ -344,10 +344,10 @@ document.querySelector('.btn-primary').addEventListener('click', function (evt) 
             }
         }
     }
-    if (count >= 5000) {
+    if (count >= 7000) {
         alert('You Win!')
         return null
-    } else if (count < 5000 && invisibleBox.length === 30) {
+    } else if (count < 7000 && invisibleBox.length === 30) {
         alert('Sorry, you lose - press reset to play again!')
         return null
     }
