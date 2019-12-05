@@ -9,7 +9,7 @@
 // Bonus - create an input field for the user to type in their name to displayed under the game board.
 
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
-let score = 0;
+
 let questions = [
     {
         text: "The color Christmas Elvis is will have without you.",
@@ -50,13 +50,13 @@ let questions = [
         text: "The tool used to strike the ball in Tennis",
         pointValue: '200',
         options: ["What is a paddel?", "What is a racket?", "What is a club?", "What is the hand?"],
-        correct: "What is a racket",
+        correct: "What is a racket?",
         category: 'Sports'
     },
     {
         text: "The only NFL team that is publically owned",
         pointValue: '400',
-        options: ["Who are the Tampa Bay Buccaneers?", "Who are the Dalas Cowboys?", "Who are The Green Bay Packers?", "Who are The Atlanta Falcons?"],
+        options: ["Who are the Tampa Bay Buccaneers?", "Who are the Dalas Cowboys?", "Who are the Green Bay Packers?", "Who are The Atlanta Falcons?"],
         correct: "Who are the Green Bay Packers?",
         category: 'Sports'
     },
@@ -71,7 +71,7 @@ let questions = [
         text: "Famous golfer nicknamed The Golden Bear",
         pointValue: '800',
         options: ["Who is Jack Nicklaus?", "Who is Arnold Palmer?", "Who is Gary Player?", "Who is Tom Watson?"],
-        correct: "Who is Jack Nicklaus",
+        correct: "Who is Jack Nicklaus?",
         category: 'Sports'
     },
     {
@@ -294,6 +294,7 @@ function createBoard() {
                     answer2.textContent = questions[i].options[1]
                     answer3.textContent = questions[i].options[2]
                     answer4.textContent = questions[i].options[3]
+                    this.classList.add('invisible')
                 }
             }
         })
@@ -322,12 +323,29 @@ document.querySelector('.resetButton').addEventListener('click', function () {
 
 document.querySelector('.btn-primary').setAttribute('data-dismiss', "modal")
 
-document.querySelector('.btn-primary').addEventListener('click', function () {
+let count = 0;
+
+document.querySelector('.btn-primary').addEventListener('click', function (evt) {
+
     let checkedValue = document.querySelector('input[name="exampleRadios"]:checked').nextElementSibling.textContent
-    console.log(checkedValue)
+    let score = document.querySelector('.score')
+    let test = document.querySelector('.modal-question')
+
+    for (let i = 0; i < questions.length; i++) {
+        if (test.textContent === questions[i].text) {
+            if (checkedValue === questions[i].correct) {
+                count += parseInt(questions[i].pointValue)
+                score.textContent = count
+            } else if (checkedValue !== questions[i].correct) {
+                count -= parseInt(questions[i].pointValue)
+                score.textContent = count
+                break
+            }
+        }
+    }
 })
 
-// Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
+// Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions.
 
 // Questions problem - how to store information about each question (text of question, choices for answers, point value, correct answers)
 // Seperate these questions by category
