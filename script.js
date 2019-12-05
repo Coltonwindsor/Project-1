@@ -9,6 +9,7 @@
 // Bonus - create an input field for the user to type in their name to displayed under the game board.
 
 // Using javascript - create the game board (6x6) with categories listed on the top row and point values displayed in the squares underneath.
+let score = 0;
 let questions = [
     {
         text: "The color Christmas Elvis is will have without you.",
@@ -319,15 +320,15 @@ document.querySelector('.resetButton').addEventListener('click', function () {
     location.reload();
 })
 
+document.querySelector('.btn-primary').setAttribute('data-dismiss', "modal")
+
 document.querySelector('.btn-primary').addEventListener('click', function () {
-
-
-
-
+    let checkedValue = document.querySelector('input[name="exampleRadios"]:checked').nextElementSibling.textContent
+    console.log(checkedValue)
 })
 
 // Create a global variable to track the players score, set it equal to zero. Points will be added to or subtracted from this varibale as the user answers questions. 
-let score = 0;
+
 // Questions problem - how to store information about each question (text of question, choices for answers, point value, correct answers)
 // Seperate these questions by category
 // create a variable called questions - set it equal to an array of objects - each object contains the information for each question.
