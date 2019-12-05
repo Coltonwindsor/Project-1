@@ -330,7 +330,8 @@ document.querySelector('.btn-primary').addEventListener('click', function (evt) 
     let checkedValue = document.querySelector('input[name="exampleRadios"]:checked').nextElementSibling.textContent
     let score = document.querySelector('.score')
     let test = document.querySelector('.modal-question')
-
+    let invisibleBox = document.querySelectorAll('.invisible')
+    console.log(invisibleBox)
     for (let i = 0; i < questions.length; i++) {
         if (test.textContent === questions[i].text) {
             if (checkedValue === questions[i].correct) {
@@ -345,6 +346,9 @@ document.querySelector('.btn-primary').addEventListener('click', function (evt) 
     }
     if (count >= 5000) {
         alert('You Win!')
+        return null
+    } else if (count < 5000 && invisibleBox.length === 30) {
+        alert('Sorry, you lose - press reset to play again!')
         return null
     }
 })
