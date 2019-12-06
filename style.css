@@ -5,7 +5,9 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.instructions {
+  text-shadow: 3px 3px rgb(201, 181, 181);
+}
 .hideMe {
   text-align: center;
   font-family: "Solway", serif;
