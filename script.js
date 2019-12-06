@@ -343,11 +343,11 @@ document.querySelector('.btn-primary').addEventListener('click', function (evt) 
         if (test.textContent === questions[i].text) {
             if (checkedValue === questions[i].correct) {
                 count += parseInt(questions[i].pointValue)
-                score.textContent = count
+                score.textContent = 'Score:' + count
                 correctSound.play();
             } else if (checkedValue !== questions[i].correct) {
                 count -= parseInt(questions[i].pointValue)
-                score.textContent = count
+                score.textContent = 'Score:' + count
                 incorrectSound.play();
                 break
             }
