@@ -12,7 +12,7 @@
 
 let questions = [
     {
-        text: "The color Christmas Elvis is will have without you.",
+        text: "The color Christmas Elvis will have without you.",
         pointValue: '200',
         options: ["What is red?", "What is blue?", "What is green?", "What is white?"],
         correct: "What is blue?",
@@ -99,7 +99,7 @@ let questions = [
         text: "This actress plays Katniss Everdeen in the Hunger Games movies",
         pointValue: '600',
         options: ["Who is Kate Winslet?", "Who is Jennifer Lawrence?", "Who is Scarlett Johansson?", "Who is Ellen Page?"],
-        correct: "Who is Scarlett Johansson?",
+        correct: "Who is Jennifer Lawrence?",
         category: 'Movies'
     },
     {
