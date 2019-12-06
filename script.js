@@ -300,7 +300,11 @@ function createBoard() {
         })
     }
 }
-
+function playerName() {
+    let newPlayer = document.querySelector('input').value
+    let player = document.querySelector('.player')
+    player.textContent = "Player: " + newPlayer
+}
 
 function hideInstructions() {
     document.querySelector('.hideMe').classList.add('hidden')
@@ -310,11 +314,12 @@ document.querySelector('.beginButton').addEventListener('click', function () {
     hideInstructions();
     createBoard();
     showFooter();
+    playerName();
 })
 
-document.querySelector('.hideMeToo').classList.add('hidden')
+document.querySelector('.hideMeToo').classList.add('invisible')
 function showFooter() {
-    document.querySelector('.hideMeToo').classList.remove('hidden')
+    document.querySelector('.hideMeToo').classList.remove('invisible')
 }
 
 document.querySelector('.resetButton').addEventListener('click', function () {

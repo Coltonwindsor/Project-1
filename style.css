@@ -40,6 +40,11 @@ main {
 body {
   background-color: rgb(194, 204, 194);
 }
+.input {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
 .box {
   background-color: #040ab1;
   width: 16%;
