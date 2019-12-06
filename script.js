@@ -336,15 +336,19 @@ document.querySelector('.btn-primary').addEventListener('click', function (evt) 
     let score = document.querySelector('.score')
     let test = document.querySelector('.modal-question')
     let invisibleBox = document.querySelectorAll('.invisible')
-    console.log(invisibleBox)
+    let correctSound = document.querySelector('.correctSound')
+    let incorrectSound = document.querySelector('.incorrectSound')
+
     for (let i = 0; i < questions.length; i++) {
         if (test.textContent === questions[i].text) {
             if (checkedValue === questions[i].correct) {
                 count += parseInt(questions[i].pointValue)
                 score.textContent = count
+                correctSound.play();
             } else if (checkedValue !== questions[i].correct) {
                 count -= parseInt(questions[i].pointValue)
                 score.textContent = count
+                incorrectSound.play();
                 break
             }
         }
